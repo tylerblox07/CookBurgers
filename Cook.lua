@@ -125,13 +125,6 @@ Section:NewButton("get all", "ButtonInfo", function()
 if v.Name == 'Steak' then
 v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end
-end
-
-    for i,v in pairs(game:GetDescendants()) do
-if v.Name == 'Cheese' then
-v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-end
-end
 end)
 
 SettingsSection:NewKeybind("ToggleGui", "Set you toggle gui key", Enum.KeyCode.F, function()	Library:ToggleUI()end)
