@@ -120,12 +120,7 @@ local Tab = Window:NewTab("More free")
 
 local Section = Tab:NewSection("scripts")
 
-
-local Settings = Window:NewTab("Settings")
-local SettingsSection = Settings:NewSection("Settings")
-
 Section:NewButton("get all", "ButtonInfo", function()
-		
     for i,v in pairs(game:GetDescendants()) do
 if v.Name == 'Steak' then
 v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
@@ -138,8 +133,5 @@ v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 end
 end
 end)
-
-local Settings = Window:NewTab("Settings")
-local SettingsSection = Settings:NewSection("Settings")
 
 SettingsSection:NewKeybind("ToggleGui", "Set you toggle gui key", Enum.KeyCode.F, function()	Library:ToggleUI()end)
