@@ -125,6 +125,7 @@ local Settings = Window:NewTab("Settings")
 local SettingsSection = Settings:NewSection("Settings")
 
 Section:NewButton("get all", "ButtonInfo", function()
+		
     for i,v in pairs(game:GetDescendants()) do
 if v.Name == 'Steak' then
 v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
